@@ -19,6 +19,8 @@ spec:
           a=200
           b=10
           c=4
+          echo $(seq 6)
+          echo $(seq $c)
           for i in $(seq $a)
           do
             echo "Welcome for the ${i}-th time out of $a"
