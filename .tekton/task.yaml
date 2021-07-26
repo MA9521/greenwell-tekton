@@ -32,4 +32,17 @@ spec:
       image: ubuntu
       command: ["bash", "-c"]
       args:
-        - echo "SHAZBOT2"      
+        - |
+          echo "SHAZBOT2"
+          a=20002
+          b=10
+          c=4
+          for i in $(seq $a)
+          do
+            echo "Welcome for the ${i}-th time out of $a"
+          done
+          for i in $(seq $b)
+          do
+            echo "Sleeping $c seconds for the ${i}-th time out of $b"
+            sleep $c
+          done
