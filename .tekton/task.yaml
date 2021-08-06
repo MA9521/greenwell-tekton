@@ -28,7 +28,7 @@ spec:
             echo "Sleeping $c seconds for the ${i}-th time out of $b"
             sleep $c
           done
-    - name: task-two
+    - name: task-one-step-two
       image: ubuntu
       command: ["bash", "-c"]
       args:
